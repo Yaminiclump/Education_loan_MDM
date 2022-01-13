@@ -1,0 +1,42 @@
+insert into mdm_services_country (name, serviceable, search_tag, status, creation_date, creation_by)
+values ('India', 1, 'india', 1, now(), 'Yogendra');
+
+insert into mdm_services_state (name, country_id, search_tag, status, creation_date, creation_by)
+values ('Maharashtra', 1, 'maharashtra', 1, now(), 'Yogendra');
+insert into mdm_services_state (name, country_id, search_tag, status, creation_date, creation_by)
+values ('Rajasthan', 1, 'rajasthan', 1, now(), 'Yogendra');
+
+
+insert into mdm_services_city (name, state_id, search_tag, status, creation_date, creation_by)
+values ('Mumbai', 1, 'mumbai', 1, now(), 'Yogendra');
+insert into mdm_services_city (name, state_id, search_tag, status, creation_date, creation_by)
+values ('Nagpur', 1, 'nagpur', 1, now(), 'Yogendra');
+insert into mdm_services_city (name, state_id, search_tag, status, creation_date, creation_by)
+values ('Jaipur', 2, 'jaipur', 1, now(), 'Yogendra');
+insert into mdm_services_city (name, state_id, search_tag, status, creation_date, creation_by)
+values ('Kota', 2, 'kota', 1, now(), 'Yogendra');
+
+
+insert into mdm_services_pincode (value, city_id, serviceable, status, creation_date, creation_by)
+values ('400701', 1, 1, 1, now(), 'Yogendra');
+insert into mdm_services_pincode (value, city_id, serviceable, status, creation_date, creation_by)
+values ('400702', 1, 1, 1, now(), 'Yogendra');
+
+insert into mdm_services_pincode (value, city_id, serviceable, status, creation_date, creation_by)
+values ('324005', 4, 1, 1, now(), 'Yogendra');
+insert into mdm_services_pincode (value, city_id, serviceable, status, creation_date, creation_by)
+values ('324006', 4, 1, 1, now(), 'Yogendra');
+
+insert into mdm_services_university (name, city_id, search_tag, status, creation_date, creation_by)
+values ('Indian Institute of Technology Bombay', 1, 'iit bombay, indian institute of technology', 1, now(), 'Yogendra');
+insert into mdm_services_university (name, city_id, search_tag, status, creation_date, creation_by)
+values ('VJTI Mumbai', 1, 'veermata jijabai technological institute, vjti', 1, now(), 'Yogendra');
+
+insert into mdm_services_institute (university_id, name, city_id, ranking, ranking_source, serviceable, blacklisted, search_tag,
+status, creation_date, creation_by)
+values (1, 'Indian Institute of Technology Bombay', 1, 1, 'NA', True, False,
+'iit bombay, indian institute of technology', 1, now(), 'Yogendra');
+insert into mdm_services_institute (university_id, name, city_id, ranking, ranking_source, serviceable, blacklisted, search_tag, 
+status, creation_date, creation_by)
+values (2, 'VJTI Mumbai', 1, 1, 'NA', True, False,
+'veermata jijabai technological institute, vjti', 1, now(), 'Yogendra');
